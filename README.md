@@ -1,10 +1,9 @@
 # 汉字转仓颉码
 
-Python 3
-
-````
+```
 python3 c_transform.py --input <input_file> --output <output_file> --mode <0: 汉字转仓颉; 1: 仓颉转汉字>
 ```
+
 
 这是一个将中文转为仓颉码的脚本
 
