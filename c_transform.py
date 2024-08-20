@@ -30,7 +30,7 @@ class c_transform():
         elif self.__ch2cj == None and self.__cj2ch == None:
             self.__cj2ch = dict()
             self.__ch2cj = dict()
-            mapfunction = json.load(open(mapfile), encoding="utf8")
+            mapfunction = json.load(open(mapfile))
             keys = list(mapfunction.keys())
             keys.sort()
             for k in keys:
@@ -40,7 +40,7 @@ class c_transform():
                     while v+str(index) in self.__cj2ch:
                         index += 1
                     v += str(index)
-                    print (v)
+                    #print (v)
                 
                 self.__ch2cj[k] = v
                 self.__cj2ch[v] = k
